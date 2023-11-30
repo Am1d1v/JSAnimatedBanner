@@ -24,8 +24,19 @@ section
     h2
         position: absolute
         font-size: 10vw
-        font-weight: 400
+        font-weight: 800
         color: #fff
         z-index: 5
         transform: skewY(-10deg)
+        text-shadow: 1px 1px 0px #ccc, 2px 2px 0px #ccc, 3px 3px 0px #ccc, 10px 10px 0px rgba(0, 0, 0, 0.2)
+        animation: floating 5s ease-in-out infinite
 
+
+// Keyframes
+@keyframes floating
+    0%, 100%
+        transform: skewY(-10deg) translateY(-30px)
+    50%
+        transform: skewY(-10deg) translateY(30px)    
+    
+                
