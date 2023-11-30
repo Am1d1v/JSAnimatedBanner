@@ -30,7 +30,12 @@ section
         transform: skewY(-10deg)
         text-shadow: 1px 1px 0px #ccc, 2px 2px 0px #ccc, 3px 3px 0px #ccc, 10px 10px 0px rgba(0, 0, 0, 0.2)
         animation: floating 5s ease-in-out infinite
-
+    i
+        position: absolute
+        background: #fff
+        border-radius: 50%
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
+        animation: stars linear infinite
 
 // Keyframes
 @keyframes floating
@@ -39,4 +44,12 @@ section
     50%
         transform: skewY(-10deg) translateY(30px)    
     
-                
+@keyframes stars
+    0%
+        opacity: 0
+    10%
+        opacity: 1
+    90%
+       opacity: 1
+    100%
+        opacity: 0                     
